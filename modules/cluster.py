@@ -1,7 +1,11 @@
 import subprocess
 
 def install_helm():
-    subprocess.run(["curl", "-fsSL", "https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3", "|", "bash"], check=True)
+    subprocess.run(
+        "curl -fsSL https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash",
+        shell=True,
+        check=True
+    )
 
 def install_kubectl_tools():
     install_helm()

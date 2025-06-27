@@ -4,7 +4,7 @@
 - This script uses **Helm v3**, which is a client-only tool. There is **no need to install Helm components inside the Kubernetes cluster itself.**
 - Helm is installed **on the local system**, and it uses your `kubectl` configuration to communicate with the cluster.
 - the assignment says "install Helm within the cluster," which seems unnecessary.
-
+- You can find the screenshots from the sample run in the screenshots' folder.
 
 ## Features
 - Connects to Kubernetes cluster

@@ -24,16 +24,16 @@ spec:
               cpu: "500m"
           ports:
             - containerPort: 80
----
-apiVersion: keda.sh/v1alpha1
-kind: ScaledObject
-metadata:
-  name: nginx-scaledobject
-spec:
-  scaleTargetRef:
-    name: test-deployment
-  triggers:
-    - type: cpu
-      metadata:
-        type: Utilization
-        value: "50"
+#---
+#apiVersion: keda.sh/v1alpha1
+#kind: ScaledObject
+#metadata:
+#  name: nginx-scaledobject
+#spec:
+#  scaleTargetRef:
+#    name: test-deployment
+#  triggers:
+#    - type: cpu
+#      metadata:
+#        type: Utilization
+#        value: "50"
